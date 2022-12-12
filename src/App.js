@@ -11,7 +11,7 @@ function App() {
       <div className="card frame">
         <Routes>
           <Route exact path="/login" element={<SignIn />}></Route>
-          <Route exact path="/register" element={<SignUp />}></Route>
+          <Route exact path="/signup" element={<SignUp />}></Route>
           <Route path="/" element={<Home />}></Route>
         </Routes>
       </div>
