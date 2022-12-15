@@ -13,8 +13,8 @@ code {
 }
 
 .wrapper {
-  max-height: 75vh;
-  max-width: 75vh;
+  min-height: 75vh;
+  min-width: 75vh;
   display: flex;
   justify-content: center;
   align-items: center;
