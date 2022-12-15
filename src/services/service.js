@@ -19,7 +19,7 @@ const RestService = {
             method: "POST", 
             headers: { 
                 'Accept': 'application/json', 
-                'Content-Type': 'application/json' 
+                'Content-Type': 'application/json'
             }, 
             body: JSON.stringify(data) 
         });
@@ -61,6 +61,18 @@ const RestService = {
         });
 
         return response.json();
+    },
+    createProduct: async function(data = {}){
+        const response = await fetch(`${url}/products`, {
+            method: "POST",
+            headers: {
+                'Accept': 'application/json', 
+                'Content-Type': 'application/json',
+                'authorization': localStorage.getItem('token')
+            },
+            body: JSON.stringify(data)
+        })
+        console.log(response)
     }
 };
 
