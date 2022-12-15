@@ -17,7 +17,8 @@ import {
 } from '@mui/material';
 import MenuIcon from '@mui/icons-material/Menu';
 import LogoutIcon from '@mui/icons-material/Logout';
-import PersonIcon from '@mui/icons-material/Person';
+import ShoppingCartIcon from '@mui/icons-material/ShoppingCart';
+import AddBoxIcon from '@mui/icons-material/AddBox';
 
 import RestService from '../services/service';
 
@@ -54,7 +55,8 @@ function Layout(props) {
   };
 
   const options = [
-    {text: 'Productos', route: '/products', icon: <PersonIcon />}
+    {text: 'Productos', route: '/products', icon: <ShoppingCartIcon />},
+    {text: 'Nuevo Producto', route: '/product', icon: <AddBoxIcon />}
   ];
 
   const drawer = (
