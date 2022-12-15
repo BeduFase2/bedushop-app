@@ -1,6 +1,5 @@
 import { Grid } from '@mui/material';
-import {Box,Button,Container,Paper,InputAdornment, OutlinedInput} from '@mui/material';
-import { styled } from '@mui/material/styles';
+import {Box,Button,Container,InputAdornment, OutlinedInput} from '@mui/material';
 import Dropzone from './Dropzone';
 import ImageGride from './ImageGride'
 import React, { useCallback, useState } from "react";
