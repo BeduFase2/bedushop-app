@@ -25,6 +25,42 @@ const RestService = {
         });
 
         return response.json();
+    },
+    verifyUser: async function(token = '') {
+        const response = await fetch(`${url}/users/self`, { 
+            method: 'GET', 
+            headers: { 
+                'Accept': 'application/json', 
+                'Content-Type': 'application/json',
+                'authorization': token
+            }
+        });
+
+        return response.json();
+    },
+    getProducts: async function(token = '') {
+        const response = await fetch(`${url}/products`, { 
+            method: 'GET', 
+            headers: { 
+                'Accept': 'application/json', 
+                'Content-Type': 'application/json',
+                'authorization': token
+            }
+        });
+
+        return response.json();
+    },
+    getReviews: async function(token = '') {
+        const response = await fetch(`${url}/reviews`, { 
+            method: 'GET', 
+            headers: { 
+                'Accept': 'application/json', 
+                'Content-Type': 'application/json',
+                'authorization': token
+            }
+        });
+
+        return response.json();
     }
 };
 
