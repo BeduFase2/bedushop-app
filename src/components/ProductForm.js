@@ -53,8 +53,8 @@ export default function ProductForm() {
     <Layout children={
       <>
         <CssBaseline />
-        <Container maxWidth={false} disableGutters sx={{ height: "20vh" }}>
-          <Box sx={{ height: '100vh', width: '100vw', display: "flex", flexDirection: "row", alignItems: "center" }} >
+        <Container maxWidth={false} disableGutters sx={{ height: "100vh" }}>
+          <Box sx={{ height: '100vh', width: '80vw', display: "flex", flexDirection: "row", alignItems: "center" }} >
             <Grid container direction="row" spacing={2} justifyContent="space-around" alignItems="center" sx={{ height: "100vh", width: "100" }}>
               <Grid item md={4}>
                 <Box sx={{ width: '100', display: "row", flexDirection: "columns", justifyContent: "center" }}>
