@@ -56,8 +56,8 @@ export default function ProductForm()
       }
   
         RestService.createProduct(body).then((data) => {
-          alert(data['message']);
-          if (data['message'] === 'Registro existoso') {
+          console.log(data)
+          if (data.ok) {
             alert("Registro exitoso")
           }
         }).catch(e => {
