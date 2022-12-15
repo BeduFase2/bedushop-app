@@ -14,7 +14,7 @@ code {
 
 .wrapper {
   min-height: 75vh;
-  min-width: 75vh;
+  min-width: 75vw;
   display: flex;
   justify-content: center;
   align-items: center;
