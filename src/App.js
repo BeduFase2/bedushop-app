@@ -16,10 +16,10 @@ function App() {
         <Route path="/" element={<Home />}></Route>
         <Route exact path="/login" element={<SignIn />}></Route>
         <Route exact path="/signup" element={<SignUp />}></Route>
+        <Route exact path="/product" element={<ProductForm />}></Route>
         <Route exact path="/products" element={<Products />}></Route>
         <Route exact path="/reviews/:id" element={<Reviews />}></Route>
         <Route path="*" element={<NotFound />}></Route>
-        <Route path="/product" element={<ProductForm />}></Route>
       </Routes>
     </>
   );
