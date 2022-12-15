@@ -11,12 +11,6 @@ function Dropzone({ onDrop, accept, open }) {
       onDrop,
     });
 
-  const files = acceptedFiles.map((file) => (
-    <li key={file.path}>
-      {file.path} - {file.size} bytes
-    </li>
-  ));
-
   return (
     <div>
       <div {...getRootProps({ className: "dropzone" })}>

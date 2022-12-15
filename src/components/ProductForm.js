@@ -1,32 +1,17 @@
 import { Grid } from '@mui/material';
-import {Box,Button,Container,Paper,Input,InputAdornment, OutlinedInput} from '@mui/material';
-import { styled, ThemeProvider } from '@mui/material/styles';
+import {Box,Button,Container,Paper,InputAdornment, OutlinedInput} from '@mui/material';
+import { styled } from '@mui/material/styles';
 import Dropzone from './Dropzone';
 import ImageGride from './ImageGride'
 import React, { useCallback, useState } from "react";
 import cuid from "cuid";
-import { Avatar, CssBaseline, TextField, Link, Typography } from '@mui/material';
-import { createTheme } from '@mui/material/styles';
-import { useNavigate } from 'react-router-dom';
+import { Avatar, CssBaseline, TextField, Typography } from '@mui/material';
 import Inventory2OutlinedIcon from '@mui/icons-material/Inventory2Outlined';
-import PropTypes from 'prop-types';
-import NumberFormat from 'react-number-format';
 import InputLabel from '@mui/material/InputLabel';
 import FormControl from '@mui/material/FormControl';
 
 import RestService from '../services/service';
-
-const Item = styled(Paper)(({ theme }) => ({
-    backgroundColor: theme.palette.mode === 'dark' ? '#1A2027' : '#fff',
-    ...theme.typography.body2,
-    padding: theme.spacing(1),
-    textAlign: 'center',
-    color: theme.palette.text.secondary,
-  }));
-
-  
-  
-  
+ 
 export default function ProductForm()
 {
     const [images, setImages] = useState([]);
